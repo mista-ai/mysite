@@ -16,25 +16,24 @@ This is a feature-rich blog application developed using Django. The project incl
 
 ## Usage
 
-- **User Authentication:** Sign up with email or use social login via Facebook, Twitter, or Google.
-- **Profile Management:** Update your profile with custom information and images.
-- **Bookmarklet:** Drag the provided bookmarklet to your bookmarks bar to share images directly from other websites.
-- **Follow System:** Follow other users to stay updated with their activities.
-- **Infinite Scroll:** Enjoy a seamless browsing experience with AJAX-driven infinite scrolling.
-- **Activity Streams:** View a stream of activities from users you follow.
-- **Redis Integration:** Experience improved performance with Redis caching and a Redis-based image ranking system.
+- **Admin Interface:** Access the Django admin interface at `http://127.0.0.1:8000/admin/` to manage blog posts, comments, tags, and more.
+- **Email Post Recommendations:** Share posts via email directly from the blog post page.
+- **Comments:** Users can leave comments on each post.
+- **Tagging:** Filter posts by tags for easy navigation.
+- **Search:** Use the search bar to find posts using the PostgreSQL-based search engine.
 
-## Optimization and Debugging
+## Optimization
 
-- **Django Debug Toolbar:** Utilize the integrated toolbar for debugging during development.
-- **Optimized QuerySets:** The application is designed to efficiently handle database queries.
-- **Django Signals:** Ensure data integrity with custom signal handlers.
+The blog is optimized for performance and user engagement through:
+
+- SEO-friendly URLs and sitemap generation.
+- Efficient object pagination to improve loading times.
+- RSS feed for consistent user engagement.
+- Custom template tags and filters for better control over content display.
 
 ## Technologies Used
 
 - **Django:** A high-level Python web framework.
-- **Redis:** Used for caching, real-time statistics, and image ranking.
-- **OAuth 2.0:** For secure social authentication.
-- **JavaScript:** Enables the bookmarklet functionality and AJAX-driven features.
-- **Easy Thumbnails:** For efficient image handling and resizing.
+- **PostgreSQL:** Database for storing blog data and implementing full-text search.
 - **HTML/CSS:** For frontend development.
+- **Python:** For backend logic and functionality.
